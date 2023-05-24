@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form paket liburan ke jepang</title>
+    <style>
+      aside {
+        height: 200px;
+        width: 15%;
+        padding-left: 15px;
+        margin-left: 15px;
+        font-style: italic;
+        background-color: lightgray;
+      }
+      form {
+        height: 200px;
+        width: 1200px;
+        padding-left: 10px;
+        margin-left: 15px;
+        float: center;
+        font-style: bold;
+        background-color: wheat;
+      }
+      article {
+        text-align: left;
+        font-size: 130%;
+        background-color: rgb(249, 246, 239);
+        width: 1300px;
+      }
+      ul {
+        background-color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://img.okezone.com/content/2023/05/22/320/2818040/menguak-siapa-pemilik-puncak-gunung-fuji-awas-jangan-kaget-xStQPH0C83.jpg"
+        alt=""
+        ,
+        width="1500px"
+        ,
+        height="300px"
+        ,
+      />
+      <ul>
+        <li>Beranda</li>
+        <li>Pesan Tiket</li>
+        <li>Rekomendasi Wisata</li>
+        <li>Lain-lain</li>
+      </ul>
+      <h1>Form Pemesanan Tiket ke Jepang</h1>
+    </header>
+    <main>
+      <div id="content">
+        <section>
+          <pre style="font-size: 120%">
+            Berikut adalah formulir pemesanan tiket untuk
+            berlibur ke negara jepang
+          </pre>
+        </section>
+        <section>
+          <form onsubmit="FormTerkirim()">
+            <div>
+              <label for="Nama">Nama</label>
+              <input
+                type="text"
+                ,
+                id="Nama"
+                ,
+                placeholder="Isi nama"
+                ,required
+              />
+            </div>
+            <div>
+              <label for="email">email </label>
+              <input
+                type="email"
+                ,
+                id="email"
+                ,
+                placeholder="email@gmail.com"
+              />
+            </div>
+            <div>
+              <label for="Tempat Lahir">Tempat Lahir</label>
+              <input
+                type="text"
+                ,
+                id="Tempat Lahir"
+                ,
+                placeholder="Tempat Lahir"
+                ,
+                required
+              />
+            </div>
+            <div>
+              <label for="Tanggal Lahir">Tanggal Lahir</label>
+              <input type="date" , id="Tanggal Lahir" , required />
+            </div>
+            <div>
+              <label for="Tanggal Berangkat">Tanggal Berangkat</label>
+              <input type="date" , id="Tanggal Berangkat" />
+            </div>
+            <div>
+              <label for="Kota Tujuan">Kota Tujuan</label>
+              <select name="Kota Tujuan" id="Kota Tujuan">
+                <option value="">-</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Yokohama">Yokohama</option>
+                <option value="Miyagi">Miyagi</option>
+                <option value="Nagasaki">Nagasaki</option>
+                <option value="Hiroshima">Hiroshima</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Kyoto">Kyoto</option>
+                <option value="Kobe">Kobe</option>
+                <option value="Fukuoka">Fukuoka</option>
+                <option value="Sendai">Sendai</option>
+              </select>
+            </div>
+            <div>
+              <label for="Tanggal Pulang">Tanggal Pulang</label>
+              <input type="date" , id="Tanggal Pulang" />
+            </div>
+            <div>
+              <input type="submit" value="Kumpulkan" />
+            </div>
+          </form>
+          <script src="project1.js"></script>
+        </section>
+        <section>
+          <article>
+            <pre>
+              Deskripsi singkat tentang negara Jepang : 
+              Jepang (bahasa Jepang: 日本国, Nihonkoku atau Nipponkoku) adalah sebuah negara kesatuan yang bersistem 
+              parlementer dengan berbentuk monarki konstitusional dan juga negara kepulauan di Asia Timur. Letaknya 
+              di ujung barat Samudra Pasifik, di sebelah timur Laut Jepang, dan bersebelahan dengan Tiongkok, Korea Selatan, 
+              dan Rusia. Pulau-pulau paling utara berada di Laut Okhotsk dan wilayah paling selatan berupa kelompok pulau-pulau 
+              kecil di Laut Tiongkok Timur, tepatnya di sebelah selatan Okinawa yang berseberangan dengan Taiwan.
+  
+              Jepang terdiri dari 6.852 pulau[10] dan menjadikannya sebagai negara kepulauan. Pulau-pulau utama dari utara 
+              ke selatan adalah Hokkaido, Honshu (pulau terbesar), Shikoku, dan Kyushu. Sekitar 97% wilayah daratan Jepang berada 
+              di keempat pulau terbesarnya. Sebagian besar pulau di Jepang bergunung-gunung, dan sebagian di antaranya merupakan 
+              gunung berapi. Gunung tertinggi di Jepang adalah Gunung Fuji yang merupakan sebuah gunung berapi. Penduduk Jepang berjumlah 
+              128 juta jiwa, dan berada di peringkat ke-10 negara berpenduduk terbanyak di dunia. Tokyo secara de facto adalah ibu kota 
+              Jepang, dan berkedudukan sebagai sebuah prefektur. Tokyo Raya adalah sebutan untuk Tokyo dan beberapa kota yang berada di 
+              prefektur sekelilingnya. Sebagai daerah metropolitan terluas di dunia, Tokyo Raya berpenduduk lebih dari 30 juta orang dan 
+              menjadikan nya kota terpadat di dunia.
+            </pre>
+          </article>
+        </section>
+        <aside>
+          <div>
+            <b>Biodata pembuat website</b>
+            <p>Nama : Tatak Adi Subagyo</p>
+            <p>NIM : 11221073</p>
+            <p>TTL : Balikpapan, 17 Juli 2003</p>
+            <a href="https://www.instagram.com/tatakas514_/?next=%2F"
+              >My Instagram</a
+            >
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <h5 style="text-align: center">
+        Copyright @ 2023 - Tatak Adi Subagyo - 11221073
+      </h5>
+    </footer>
+  </body>
+</html>
